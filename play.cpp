@@ -126,10 +126,10 @@ void encryptByPlayfairCipher(char str[], char key[])
 int main()
 {
 	char str[SIZE], key[SIZE];
-	strcpy(key, "Monarchy");
-	cout << "Key text: " << key << "\n";
-	strcpy(str, "instruments");
-	cout << "Plain text: " << str << "\n";
+	cout<<"enter the key:";
+	cin.getline(key,SIZE);
+	cout << "\n Enter the Plain text: " ;
+        cin.getline(str,SIZE);
 	encryptByPlayfairCipher(str, key);
 	cout << "Cipher text: " << str << "\n";
 	return 0;
